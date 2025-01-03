@@ -9,7 +9,8 @@ function App() {
       <Navbar/>
       <BrowserRouter>
       <Routes>
-        <Route path="/home" exact Component={Homescreen} />
+        <Route path="/" element={<Homescreen />} />
+        <Route path="/home" element={<Homescreen />} />
       </Routes>
       </BrowserRouter>
     </div>
